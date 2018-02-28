@@ -13,18 +13,18 @@
         document.querySelector('#target').innerHTML = 'Hey guys!'
         
         let player1 = prompt("Player 1: Rock, Paper, Scissors!", "");
-        let player2 = prompt("Player 2: Rock, Paper, Scissors!", "");
+        let player2 = prompt("Player 2: Rock, Paper, Scissors!", "").toLowerCase;
 
-        if ( player1.toLowerCase() === 'rock' && player2.toLowerCase() === 'scissors' ||
-           player1.toLowerCase() === 'paper' && player2.toLowerCase() === 'rock' || 
-         player1.toLowerCase() === 'scissors' && player2.toLowerCase() === 'paper' ) 
+        if ( player1 === 'rock' && player2 === 'scissors' ||
+           player1 === 'paper' && player2 === 'rock' || 
+         player1 === 'scissors' && player2 === 'paper' ) 
             alert('player1 wins!!!');
         else if ( 
-            player1.toLowerCase() === player2.toLowerCase()
+            player1 === player2
         )
         alert('Draw!');
         else if (
-            player1.toLowerCase() !== 'rock' && player1.toLowerCase() !== 'scissors' && player2.toLowerCase() 
+            player1 !== 'rock' && player1 !== 'scissors' && player2
             !== 'paper'
         )
         alert('Wrong input, nobody wins :(');
