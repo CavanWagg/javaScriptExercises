@@ -1,5 +1,7 @@
 'use strict';
 
+const useful = 'string';
+
 const palindromeCheck = function(sentence) {
   const result = sentence.replace(/[\W_]/g, '').split('').reverse().join('')
     .toLowerCase();
